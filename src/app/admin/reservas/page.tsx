@@ -1,0 +1,2 @@
+import { ReservationManager } from "@/components/admin/ReservationManager";
+export default function AdminReservas(){return <main className="adminContent"><header className="adminPageTitle"><div><span className="eyebrow">OPERACIONES</span><h1>Gestión de Reservas</h1><p>Administra y organiza las reservas de tus clientes.</p></div><div className="titleActions"><input type="date" defaultValue="2026-07-28"/></div></header><section className="adminCard"><ReservationManager/></section></main>}

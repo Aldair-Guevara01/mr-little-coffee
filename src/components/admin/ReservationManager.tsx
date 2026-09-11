@@ -1,0 +1,9 @@
+"use client";
+import { useState } from "react";
+import { reservations } from "@/data";
+import { ReservationStatus } from "@/types";
+const filters=["Todas","Confirmada","Pendiente","Completada","Cancelada"];
+export function ReservationManager(){
+ const [filter,setFilter]=useState("Todas"),[modal,setModal]=useState(false); const visible=reservations.filter(r=>filter==="Todas"||r.status===filter);
+ return <><div className="tabs">{filters.map(f=><button key={f} onClick={()=>setFilter(f)} className={filter===f?"active":""}>{f}</button>)}<button className="goldButton small" onClick={()=>setModal(true)}>＋ Nueva reserva</button></div><div className="tableWrap"><table><thead><tr><th>Hora</th><th>Cliente</th><th>Contacto</th><th>Personas</th><th>Área</th><th>Estado</th><th>Acciones</th></tr></thead><tbody>{visible.map(r=><tr key={r.id}><td><b>{r.time}</b></td><td>{r.client}</td><td>{r.contact}</td><td>{r.people}</td><td>{r.area}</td><td><span className={`status ${r.status.toLowerCase()}`}>{r.status}</span></td><td><button className="iconButton">✎</button> <button className="iconButton">⋮</button></td></tr>)}</tbody></table></div><div className="statusSummary">{(["Confirmada","Pendiente","Completada","Cancelada"] as ReservationStatus[]).map(s=><div key={s}><span>◉</span><p>{s}s<strong>{reservations.filter(r=>r.status===s).length}</strong></p><small>↑ 12% vs ayer</small></div>)}</div>{modal&&<div className="modal" role="dialog" aria-modal="true" aria-label="Nueva reserva"><div><button className="modalClose" onClick={()=>setModal(false)} aria-label="Cerrar">×</button><span className="eyebrow">NUEVA RESERVA</span><h2>Agregar reserva</h2><label>Cliente<input placeholder="Nombre completo"/></label><label>Hora<input type="time"/></label><button className="goldButton full" onClick={()=>setModal(false)}>Guardar simulación</button></div></div>}</>
+}

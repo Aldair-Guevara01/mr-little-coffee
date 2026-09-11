@@ -1,0 +1,2 @@
+import { LoginForm } from "@/components/public/LoginForm";
+export default function Login(){return <main className="loginPage"><div className="loginVisual"><div><span className="eyebrow">CLUB MR. LITTLE</span><h2>Más que café.<br/>Tu mundo, a tu manera.</h2></div></div><div className="loginSide"><LoginForm/><div className="loginBenefits">{[["♧","Puntos de cortesía"],["♙","Beneficios exclusivos"],["◇","Perfil personalizado"],["⌑","Reservas organizadas"]].map(([i,t])=><div key={t}><span>{i}</span><small>{t}</small></div>)}</div></div></main>}
