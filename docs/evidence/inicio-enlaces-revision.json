@@ -1,0 +1,18 @@
+[
+  {
+    "file": "src/components/public/PublicHeader.tsx",
+    "changes": "Control de cuenta según sesión: Comprobando… mientras se verifica; Registro para invitados salvo en login/registro; Mi cuenta a /perfil para cliente; ERP a /admin para administrador. Se conserva el resto del header y sus estilos.",
+    "authorization": "Seguimiento explícito del usuario: al iniciar sesión no debe aparecer Registro; revisar login y reservas para eliminar redundancias. Esta autorización amplía la excepción inicial de enlace del Header; los hashes de referencia no se modifican.",
+    "currentPath": "frontend/src/components/public/PublicHeader.tsx"
+  },
+  {
+    "file": "src/components/public/ProductCard.tsx",
+    "changes": "Conocer mas cambia button a Link, mismos textos/clases y mapa de slugs estables.",
+    "currentPath": "frontend/src/components/public/ProductCard.tsx"
+  },
+  {
+    "file": "frontend/src/app/globals.css",
+    "changes": "Reorganizacion autorizada: 165 selectores administrativos movidos a erp/src/styles/admin.css; 332 selectores publicos preservados. Comparacion AST confirma declaraciones y orden responsivo.",
+    "authorization": "Solicitud del usuario de separar frontend, backend y ERP. Los hashes historicos permanecen intactos."
+  }
+]

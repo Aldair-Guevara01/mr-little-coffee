@@ -1,0 +1,92 @@
+[
+  {
+    "check": "API y PostgreSQL disponibles en modo demo",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Consulta publica /categories",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Consulta publica /products",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Consulta publica /events",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Consulta publica /reservations/config",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "ERP rechaza visitante sin sesion",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Login y sesion admin",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Login y sesion cliente",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Permisos administrador/cliente /admin/overview",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Permisos administrador/cliente /admin/products",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Permisos administrador/cliente /admin/reservations",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Permisos administrador/cliente /admin/users",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Permisos administrador/cliente /admin/events",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Permisos administrador/cliente /admin/contacts",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Consulta propia cliente /profile",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Consulta propia cliente /reservations",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Cierre y revocacion de sesion",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  },
+  {
+    "check": "Cierre y revocacion de sesion",
+    "status": "Aprobado",
+    "type": "HTTP/API real; sin navegador"
+  }
+]

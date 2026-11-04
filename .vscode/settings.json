@@ -1,0 +1,24 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.next-verify": true,
+    "**/dist": true,
+    "**/*.tsbuildinfo": true,
+    ".local": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.next*": true,
+    "**/dist": true,
+    "**/*.tsbuildinfo": true,
+    ".local": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.next*/**": true,
+    "**/dist/**": true,
+    "**/.local/**": true
+  },
+  "eslint.workingDirectories": ["./frontend", "./backend", "./erp"]
+}

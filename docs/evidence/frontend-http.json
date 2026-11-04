@@ -1,0 +1,177 @@
+[
+  {
+    "base": "http://localhost:3000",
+    "route": "/",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/menu/latte-signature",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/menu/croissant-de-mantequilla",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/menu/cold-brew-special",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/menu/cheesecake-de-frutos-rojos",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/menu",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/eventos",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/nosotros",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/contacto",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/registro",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/login",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/reservas",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/perfil",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/admin",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/admin/clientes",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/admin/configuracion",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/admin/contactos",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/admin/eventos",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/admin/inventario",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/admin/menu",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/admin/reportes",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/admin/reservas",
+    "status": 200,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/menu/no-existe-qa",
+    "status": 404,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/menu/mocha-deluxe",
+    "status": 404,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  },
+  {
+    "base": "http://localhost:3000",
+    "route": "/perfil/favoritos",
+    "status": 404,
+    "result": "Aprobado",
+    "type": "HTTP/SSR, sin navegador"
+  }
+]

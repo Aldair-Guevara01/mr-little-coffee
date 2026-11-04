@@ -1,0 +1,3 @@
+import { ReservationManager } from "../components/ReservationManager";
+import { ReadOnlyNotice } from "../components/data";
+export default function AdminReservas() { return <main className="adminContent"><header className="adminPageTitle"><div><span className="eyebrow">OPERACIONES</span><h1>Gestión de Reservas</h1><p>Reservas de los clientes, con fechas en la zona horaria de El Salvador.</p></div></header><ReadOnlyNotice /><section className="adminCard"><ReservationManager /></section></main>; }

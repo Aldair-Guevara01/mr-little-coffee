@@ -1,0 +1,4 @@
+"use client";
+import { AdminDirectory } from "../components/AdminDirectory";
+import { adminDate, type AdminContact } from "../components/data";
+export default function ContactosAdmin() { return <AdminDirectory<AdminContact> eyebrow="ATENCIÓN" title="Mensajes de contacto" description="Solicitudes recibidas desde el formulario de contacto." endpoint="/admin/contacts" columns={["Nombre", "Correo", "Asunto", "Mensaje", "Recibido · El Salvador"]} row={(contact) => ({ id: contact.id, cells: [contact.name, contact.email, contact.subject || "Sin asunto", contact.message, adminDate(contact.createdAt)] })} />; }

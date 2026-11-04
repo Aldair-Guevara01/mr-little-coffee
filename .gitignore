@@ -1,6 +1,11 @@
 node_modules
 .next
+.next-verify
 out
 .env*
 !.env.example
 *.log
+.local/
+backend/dist/
+backend/node_modules/
+*.tsbuildinfo

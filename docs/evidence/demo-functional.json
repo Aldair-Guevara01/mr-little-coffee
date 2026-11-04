@@ -1,0 +1,86 @@
+[
+  {
+    "phase": "prepare",
+    "title": "Cuenta admin/1234 autenticada con rol admin",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "prepare",
+    "title": "Cuenta cliente/1234 autenticada con rol customer",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "prepare",
+    "title": "Todo: 9+2 productos activos, total11 sin duplicados",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "prepare",
+    "title": "Agenda consulta cuatro eventos publicados persistidos",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "prepare",
+    "title": "ERP permite administrador y deniega cliente y visitante",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "prepare",
+    "title": "Perfil se modifica, persiste en nueva consulta y se restaura",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "prepare",
+    "title": "Contacto recibido y visible solo en lectura administrativa",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "prepare",
+    "title": "Disponibilidad y doble confirmacion idempotente crean una sola reserva",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "prepare",
+    "title": "Reserva cliente aparece en el ERP persistido",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "prepare",
+    "title": "Doble cancelacion consistente deja historial cancelado",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "resume",
+    "title": "Sesion y perfil sobreviven al reinicio de API y PostgreSQL",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "resume",
+    "title": "Detalle e historial de reserva sobreviven al reinicio",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "resume",
+    "title": "Mensaje de contacto persiste tras reinicio",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  },
+  {
+    "phase": "resume",
+    "title": "Logout revoca ambas sesiones en servidor",
+    "status": "Aprobado",
+    "type": "HTTP con PostgreSQL real, sin navegador"
+  }
+]

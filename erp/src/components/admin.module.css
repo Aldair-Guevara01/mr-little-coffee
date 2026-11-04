@@ -1,0 +1,15 @@
+.erp .content { min-width: 0; }
+.erp :global(.adminPageTitle p), .erp :global(.statCard p), .erp :global(.chartCard header p), .erp :global(.datePill) { font-size: 13px; line-height: 1.5; }
+.erp :global(.adminPageTitle h1) { line-height: 1.2; }
+.erp :global(.statCard small), .erp :global(.chartCard small), .erp :global(.eventsCard b), .erp :global(.eventsCard small), .erp :global(.status), .erp :global(th), .erp :global(td), .erp :global(.tabs button), .erp :global(.search input), .erp :global(.pagination), .erp :global(.adminTopbar) { font-size: 13px; }
+.erp :global(th), .erp :global(td) { vertical-align: top; }
+.erp :global(.adminDemoBadge) { font-size: 10px; margin-bottom: 20px; }
+.erp :global(.adminSidebar nav a) { min-height: 44px; }
+.erp :global(.adminSidebar .logout) { min-height: 44px; }
+.erp :global(.adminSidebar) { overflow-y: auto; }
+.erp :global(.adminTopbar) { gap: 12px; }
+.erp :global(.search input) { min-width: 0; }
+.erp :global(.tabs button) { min-height: 44px; }
+.erp :global(.barChart small), .erp :global(.barChart span b) { font-size: 11px; }
+.erp :global(.donut small) { font-size: 11px; }
+.erp :global(.adminSidebar nav) { flex: 1; }

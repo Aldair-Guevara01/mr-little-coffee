@@ -1,0 +1,15 @@
+{
+  "scope": "Reorganizacion local en frontend, backend y erp",
+  "installation": { "command": "pnpm install --frozen-lockfile --offline", "exitCode": 0, "singleWorkspaceLockfile": true },
+  "typecheck": { "command": "pnpm typecheck", "packages": ["frontend", "backend", "erp"], "exitCode": 0 },
+  "lint": { "command": "pnpm lint", "exitCode": 0, "knownWarning": "Imagen preexistente en frontend/src/app/(public)/page.tsx:43" },
+  "build": { "command": "NEXT_VERIFY=1 pnpm build", "exitCode": 0, "frontendStaticPages": 24, "erpTypecheck": true, "backendCompiled": true },
+  "tests": { "command": "pnpm test", "exitCode": 0, "frontendPassed": 36, "backendUnitPassed": 6, "failed": 0, "skipped": 0 },
+  "home": { "command": "pnpm verify:home", "exitCode": 0, "identicalFiles": 6, "authorizedExceptions": ["PublicHeader.tsx", "ProductCard.tsx", "globals.css"] },
+  "styles": { "publicSelectorsPreserved": 332, "adminSelectorsMoved": 165, "declarationsAndResponsiveOrderPreserved": true },
+  "startup": { "command": "pnpm demo", "exitCode": 0, "frontend": "http://localhost:3000", "api": "http://localhost:4000/api", "database": "ok" },
+  "http": { "command": "node scripts/verify-http.cjs http://localhost:3000", "exitCode": 0, "passed": 25, "evidence": "frontend-http.json" },
+  "sessionsAndRoles": { "passed": 18, "evidence": "reorganization-functional.json", "domainRecordsModified": false },
+  "cleanup": ["Cuatro notas parciales redundantes", "Caches Next y TypeScript de la ubicacion anterior", "Lockfile secundario backend/pnpm-lock.yaml"],
+  "visualBrowserVerification": "Pendiente; no se afirma comparacion visual ni recorrido interactivo"
+}

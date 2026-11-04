@@ -1,0 +1,3 @@
+import { MenuCatalog } from "@/components/public/MenuCatalog";
+import { Suspense } from "react";
+export default function MenuPage(){return <main className="menuPage"><header className="pageHero"><span className="eyebrow">NUESTRA SELECCIÓN</span><h1>Nuestro Menú</h1><p>Descubre una selección única de sabores elaborados con pasión y excelencia.</p></header><Suspense fallback={<p className="px-[5vw] pb-20" role="status">Cargando catálogo…</p>}><MenuCatalog/></Suspense><section className="menuPromises">{[["♧","Ingredientes premium","Calidad en cada detalle"],["♨","Hecho con pasión","Por baristas profesionales"],["◇","Sostenible","Comprometidos con el planeta"]].map(([i,t,d])=><div key={t}><span>{i}</span><p><b>{t}</b><small>{d}</small></p></div>)}</section></main>}

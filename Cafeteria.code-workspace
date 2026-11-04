@@ -1,0 +1,43 @@
+{
+  "folders": [
+    { "name": "Frontend", "path": "frontend" },
+    { "name": "Backend", "path": "backend" },
+    { "name": "ERP - Administracion", "path": "erp" }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.next": true,
+      "**/.next-verify": true,
+      "**/dist": true,
+      "**/*.tsbuildinfo": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/.next*": true,
+      "**/dist": true,
+      "**/*.tsbuildinfo": true
+    },
+    "eslint.workingDirectories": [{ "mode": "auto" }]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Cafeteria: iniciar demo completa",
+        "type": "shell",
+        "command": "pnpm demo",
+        "options": { "cwd": "${workspaceFolder:Frontend}/.." },
+        "problemMatcher": []
+      },
+      {
+        "label": "Cafeteria: compilar todo",
+        "type": "shell",
+        "command": "pnpm build",
+        "options": { "cwd": "${workspaceFolder:Frontend}/.." },
+        "group": { "kind": "build", "isDefault": true },
+        "problemMatcher": []
+      }
+    ]
+  }
+}

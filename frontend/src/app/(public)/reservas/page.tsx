@@ -1,0 +1,3 @@
+import { Suspense } from "react";
+import { ReservationForm } from "@/components/public/ReservationForm";
+export default function Reservas() { return <main className="mx-auto min-h-[60vh] max-w-6xl px-5 py-10 sm:px-8 sm:py-14"><header className="mb-8"><span className="text-xs tracking-widest text-[#d4ae6e]">TU MOMENTO EN MR. LITTLE COFFEE</span><h1 className="mt-3 text-4xl sm:text-5xl">Reserva tu mesa</h1><p className="max-w-xl text-sm leading-7 text-[#c8b9a8]">Elige el día, el tamaño de tu grupo y una hora disponible. Te esperamos para compartir un buen café.</p></header><Suspense fallback={<p role="status">Cargando reservas…</p>}><ReservationForm /></Suspense></main>; }

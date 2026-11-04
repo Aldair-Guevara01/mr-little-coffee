@@ -1,0 +1,38 @@
+﻿[
+    {
+        "Path":  "C:\\Users\\RTX\\Desktop\\Cafeteria\\src\\app\\(public)\\page.tsx",
+        "Hash":  "6EB15EE4756747C6E9F2FA8DF3834F3674ED0EB262E0414EE10A2D23C55FAE81"
+    },
+    {
+        "Path":  "C:\\Users\\RTX\\Desktop\\Cafeteria\\src\\app\\globals.css",
+        "Hash":  "1F61106F8CBE9805DBE6F11C6945438E8220889513F4A757B4F755E58DFB2B77"
+    },
+    {
+        "Path":  "C:\\Users\\RTX\\Desktop\\Cafeteria\\src\\app\\layout.tsx",
+        "Hash":  "F62FC57C47C6C5D2D67934FC174A908FB95829FF2BCE1F84B6AC35E33666D3BE"
+    },
+    {
+        "Path":  "C:\\Users\\RTX\\Desktop\\Cafeteria\\src\\app\\(public)\\layout.tsx",
+        "Hash":  "F085332C5434D499C12C91BBE43BAD14C1335304CE102E200D4D2062356AB427"
+    },
+    {
+        "Path":  "C:\\Users\\RTX\\Desktop\\Cafeteria\\src\\components\\public\\PublicHeader.tsx",
+        "Hash":  "9A3904900570339FF2023FED1AE60789BFF64FB0AC509A539B2770C7C33920DA"
+    },
+    {
+        "Path":  "C:\\Users\\RTX\\Desktop\\Cafeteria\\src\\components\\public\\PublicFooter.tsx",
+        "Hash":  "05F422C4FC760928974B5F68B0DF2FF09CBE283A5B2844688E6598FE28AC8620"
+    },
+    {
+        "Path":  "C:\\Users\\RTX\\Desktop\\Cafeteria\\src\\components\\public\\ProductCard.tsx",
+        "Hash":  "10037B2ECADD3BE1E14239408F4DC5F232162E8F4BE9762A8FEF49699CA04FC6"
+    },
+    {
+        "Path":  "C:\\Users\\RTX\\Desktop\\Cafeteria\\src\\components\\shared\\Logo.tsx",
+        "Hash":  "4B6E7BB72736C1B424C50945883F84D099D4493E0ED70D5863D0C7207C578E83"
+    },
+    {
+        "Path":  "C:\\Users\\RTX\\Desktop\\Cafeteria\\src\\data\\index.ts",
+        "Hash":  "2A80FF6059BAE5FA2D880198B004F0CCE3A142959B0307DCC245FE90083D9FEB"
+    }
+]

@@ -1,7 +1,0 @@
-"use client";
-import { useState } from "react";
-import { inventory } from "@/data";
-export function InventoryTabs(){
- const [tab,setTab]=useState("Inventario"); const tabs=["Inventario","Consumos","Proveedores","Reportes"];
- return <><div className="tabs inventoryTabs">{tabs.map(t=><button className={tab===t?"active":""} onClick={()=>setTab(t)} key={t}>{t}</button>)}</div>{tab==="Inventario"?<div className="inventoryGrid"><div className="tableWrap"><h2>Inventario actual</h2><table><thead><tr><th>Producto</th><th>Categoría</th><th>Stock</th><th>Estado</th></tr></thead><tbody>{inventory.map(i=><tr key={i.product}><td><b>{i.product}</b></td><td>{i.category}</td><td>{i.stock} {i.unit}</td><td><span className={`status ${i.status==="Óptimo"?"ok":i.status==="Bajo"?"pending":i.status==="Agotado"?"bad":"reorder"}`}>{i.status}</span></td></tr>)}</tbody></table></div><div className="inventorySide"><article><h2>Consumo por categoría</h2><div className="donut consumption"><div><strong>128</strong><small>unidades</small></div></div><ul><li>Café <b>45%</b></li><li>Lácteos <b>20%</b></li><li>Panadería <b>15%</b></li><li>Insumos <b>12%</b></li></ul></article><article><h2>Alertas de inventario</h2>{inventory.filter(i=>i.status!=="Óptimo").map(i=><p className="alert" key={i.product}><span>⚠</span><b>{i.product}</b><small>{i.status}</small></p>)}</article></div></div>:<div className="emptyState"><span>◇</span><h2>{tab}</h2><p>Vista demostrativa preparada para futuras integraciones.</p></div>}</>
-}

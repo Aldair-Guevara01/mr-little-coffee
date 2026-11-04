@@ -1,0 +1,80 @@
+{
+  "frontend": {
+    "typecheck": {
+      "command": "pnpm typecheck",
+      "exitCode": 0
+    },
+    "lint": {
+      "command": "pnpm lint",
+      "exitCode": 0,
+      "notes": "Un aviso previo img en Inicio; no se modifico su imagen."
+    },
+    "build": {
+      "command": "NEXT_VERIFY=1 pnpm build (variable configurada en PowerShell)",
+      "exitCode": 0,
+      "next": "14.2.35"
+    },
+    "unit": {
+      "command": "pnpm test",
+      "exitCode": 0,
+      "passed": 23,
+      "failed": 0,
+      "skipped": 0
+    },
+    "home": {
+      "command": "pnpm verify:home",
+      "exitCode": 0,
+      "identicalFiles": 7,
+      "linkFiles": 2,
+      "visualComparison": "No ejecutada"
+    }
+  },
+  "backend": {
+    "typecheck": {
+      "command": "pnpm typecheck",
+      "exitCode": 0
+    },
+    "lint": {
+      "command": "pnpm lint",
+      "exitCode": 0
+    },
+    "build": {
+      "command": "pnpm build",
+      "exitCode": 0
+    },
+    "unit": {
+      "command": "pnpm test",
+      "exitCode": 0,
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    },
+    "integration": {
+      "command": "pnpm test:integration con TEST_DATABASE_URL aislada",
+      "exitCode": 0,
+      "passed": 16,
+      "subtests": 15,
+      "failed": 0,
+      "skipped": 0,
+      "database": "PostgreSQL 18"
+    }
+  },
+  "http": {
+    "command": "node scripts/verify-http.cjs http://localhost:3000 (tambien ejecutado sobre build de produccion3001)",
+    "exitCode": 0,
+    "passed": 17,
+    "bases": [
+      "http://localhost:3000",
+      "http://localhost:3001"
+    ]
+  },
+  "demo": {
+    "health": "ok",
+    "database": "ok",
+    "demoAccountsEnabled": true,
+    "functionalChecks": 14,
+    "realApiAndPostgresRestart": true,
+    "startCommand": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-demo.ps1",
+    "exitCode": 0
+  }
+}

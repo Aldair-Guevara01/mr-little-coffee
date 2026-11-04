@@ -1,0 +1,2 @@
+import { InventoryTabs } from "../components/InventoryTabs";
+export default function Inventario() { return <main className="adminContent"><header className="adminPageTitle"><div><span className="eyebrow">CONTROL DE INSUMOS</span><h1>Inventario</h1><p>Sección del panel original, pendiente de desarrollo.</p></div></header><section className="adminCard"><InventoryTabs /></section></main>; }

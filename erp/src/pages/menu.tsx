@@ -1,0 +1,3 @@
+import { AdminMenuTable } from "../components/AdminMenuTable";
+import { ReadOnlyNotice } from "../components/data";
+export default function AdminMenu() { return <main className="adminContent"><header className="adminPageTitle"><div><span className="eyebrow">CATÁLOGO</span><h1>Gestión de Menú</h1><p>Productos y categorías guardados en el catálogo.</p></div></header><ReadOnlyNotice /><section className="adminCard"><AdminMenuTable /></section></main>; }

@@ -1,0 +1,8 @@
+import { z } from "zod";
+export const emailSchema = z.string().trim().toLowerCase().min(1, "Escribe tu correo.").email("Escribe un correo válido.").max(254, "El correo es demasiado largo.");
+export const nameSchema = z.string().trim().min(2, "Escribe al menos 2 caracteres.").max(100, "El nombre permite hasta 100 caracteres.");
+export const passwordSchema = z.string().min(8, "Usa al menos 8 caracteres.").max(72, "La contraseña es demasiado larga.").refine((value) => new TextEncoder().encode(value).length <= 72, "La contraseña permite hasta 72 bytes; algunos símbolos ocupan más de uno.");
+export const registerSchema = z.object({ name: nameSchema, email: emailSchema, password: passwordSchema, confirm: z.string() }).refine((value) => value.password === value.confirm, { path: ["confirm"], message: "Las contraseñas no coinciden." });
+export const loginIdentifierSchema = z.string().trim().toLowerCase().min(1, "Escribe tu correo o usuario.").max(254, "El correo o usuario es demasiado largo.").refine((value) => value === "admin" || value === "cliente" || emailSchema.safeParse(value).success, "Escribe un correo válido o un usuario de demostración.");
+export const loginSchema = z.object({ email: loginIdentifierSchema, password: z.string().min(1, "Escribe tu contraseña.").max(72, "La contraseña es demasiado larga.") });
+export const profileSchema = z.object({ name: nameSchema, phone: z.string().trim().refine((value) => value === "" || (value.length >= 7 && value.length <= 25 && /^[+0-9 ()-]+$/.test(value)), "Usa entre 7 y 25 caracteres: números, +, espacios, guiones o paréntesis.") });
